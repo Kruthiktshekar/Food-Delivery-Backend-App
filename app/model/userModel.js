@@ -17,14 +17,6 @@ const userSchema = new Schema ({
         type : String,
         max : 12,
         min : 8
-    },
-    foodId : {
-        type : Schema.Types.ObjectId,
-        ref : 'Food'
-    },
-    restaurantId : {
-        type : Schema.Types.ObjectId,
-        ref : 'Restaurant'
     }
 })
 //create model

@@ -18,6 +18,10 @@ const foodSchema =  new Schema ({
     },
     isAvaillable : {
         type : Boolean
+    },
+    userId : {
+        type : Schema.Types.ObjectId,
+        ref : 'User'
     }
 })
 

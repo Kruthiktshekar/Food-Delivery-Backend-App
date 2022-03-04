@@ -14,6 +14,10 @@ const restaurantSchema = new Schema({
     },
     isOpen : {
         type : Boolean
+    },
+    userId : {
+        type : Schema.Types.ObjectId,
+        ref : 'User'
     }
 })
 
