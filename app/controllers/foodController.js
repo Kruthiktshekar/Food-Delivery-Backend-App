@@ -14,6 +14,7 @@ const foodController = {}
 foodController.create = (req,res) => {
     const data = req.body
     const food = new Food(data)
+    food.userId = req.user.id
     food.save()
     .then((food)=>{
         res.json(food)

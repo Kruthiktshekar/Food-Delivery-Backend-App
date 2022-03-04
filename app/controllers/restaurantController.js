@@ -14,6 +14,7 @@ const restaurantController = {}
 restaurantController.create = (req,res) => {
     const data = req.body
     const rest = new Restaurant(data)
+    rest.userId = req.user.id
     rest.save()
     .then((rest)=>{
         res.json(rest)
